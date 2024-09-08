@@ -48,21 +48,54 @@ export default function Signup() {
                 className={`bg-login-gradient flex items-center rounded-l-3xl justify-center transition-all duration-700 ease-in-out ${isLogoTransitioned ? 'w-4/6' : 'w-0 opacity-0'
                     }`}
             >
-                {/* Login Form */}
-                <form className="w-7/12 flex flex-col justify-center">
-                    <h1 className="text-3xl font-bold font-inter text-black mb-12 text-center scale-125">Student Sign-Up</h1>
+                {/* Signup Form */}
+                <form className="w-7/12 flex flex-col justify-center ">
+                    <h1 className="text-3xl font-bold font-inter text-black mb-12 text-center scale-125">Create Account</h1>
+                    <div className='name flex flex-row mb-4 justify-between items-center'>
+                        <div className='block'>
+                            <label className="block text-data font-thin text-md mb-2 " htmlFor="email/username">
+                                First Name
+                            </label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                className=" border border-black rounded-lg bg-transparent w-full py-2 px-2 text-black "
+                                required
+                            />
+                        </div>
+                        <div className='block'>
+                            <label className="block text-data font-thin text-md mb-2 " htmlFor="email/username">
+                                Last Name
+                            </label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                className=" border border-black rounded-lg bg-transparent w-full py-2 px-2 text-black "
+                                required
+                            />
+                        </div>
+                    </div>
                     <div className="mb-4">
                         <label className="block text-data font-thin text-md mb-2 " htmlFor="email/username">
-                            Email / Username
+                            Username
                         </label>
                         <input
                             type="text"
-                            id="email/username"
-                            className=" border border-black rounded-lg bg-transparent w-full py-4 px-3 text-black "
+                            id="username"
+                            className=" border border-black rounded-lg bg-transparent w-full py-2 px-2 text-black "
                             required
                         />
                     </div>
-                    <div className='h-10'>
+                    <div className="mb-4">
+                        <label className="block text-data font-thin text-md mb-2 " htmlFor="email/username">
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            className=" border border-black rounded-lg bg-transparent w-full py-2 px-2 text-black "
+                            required
+                        />
                     </div>
                     <div className="mb-6">
                         <label className="block text-data font-thin text-md mb-2" htmlFor="password">
@@ -73,14 +106,14 @@ export default function Signup() {
                             <input
                                 type={isPasswordVisible ? 'text' : 'password'}
                                 id="password"
-                                className=" bg-transparent w-full px-3 text-black"
+                                className=" bg-transparent w-full px-2 text-black"
                                 required
                             />
 
                             <Image
                                 src={eyeIcon}
                                 alt="Toggle passwrod visibility"
-                                className="w-16 inline-block max-w-full scale-50 cursor-pointer min-w-[10%]"
+                                className="h-10 inline-block scale-50 cursor-pointer"
                                 id="togglePassword"
                                 onClick={togglePasswordVisibility}
                                 priority
@@ -99,11 +132,10 @@ export default function Signup() {
                                 className=" bg-transparent w-full px-3 text-black"
                                 required
                             />
-
                             <Image
                                 src={eyeIcon}
                                 alt="Toggle passwrod visibility"
-                                className="w-16 inline-block max-w-full scale-50 cursor-pointer min-w-[10%]"
+                                className="h-10 inline-block scale-50 cursor-pointer"
                                 id="togglePassword"
                                 onClick={togglePasswordVisibility}
                                 priority
@@ -111,6 +143,8 @@ export default function Signup() {
                         </div>
                     </div>
 
+                    <div className='h-4'>
+                    </div>
                     <button
                         type="submit"
                         className="w-2/3 items-center justify-center mx-auto px-4 py-4 bg-[#5E39F6] hover:bg-blue-700 text-white font-bold rounded-full focus:outline-none focus:shadow-outline"

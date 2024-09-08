@@ -3,9 +3,9 @@ import SignUp from './Pages/Student/Signup';
 
 export default function Home() {
   return (
-    <div>
-      <Login />
-      <SignUp />
+    <div className='overflow-hidden'>
+      <Login className='Login'/>
+      <SignUp className='SignUp'/>
     </div>
   );
 }

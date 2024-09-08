@@ -58,7 +58,7 @@ export default function Login() {
             <input
               type="text"
               id="email/username"
-              className=" border border-black rounded-lg bg-transparent w-full py-4 px-3 text-black "
+              className=" border border-black rounded-lg bg-transparent w-full py-2 px-2 text-black "
               required
             />
           </div>
@@ -80,7 +80,7 @@ export default function Login() {
               <Image
                 src={eyeIcon}
                 alt="Toggle passwrod visibility"
-                className="w-16 inline-block max-w-full scale-50 cursor-pointer min-w-[10%]"
+                className="h-10 inline-block scale-50 cursor-pointer"
                 id="togglePassword"
                 onClick={togglePasswordVisibility}
                 priority
