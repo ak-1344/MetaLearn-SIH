@@ -19,7 +19,10 @@ module.exports = {
       fontFamily: {
         inter: ['Inter','sans-serif'],
         michrome: ['Michroma', 'sans-serif'],
-      }
+      },
+      borderRadius: {
+        '5xl': '2.5rem', 
+      },
     },
   },
   plugins: [],

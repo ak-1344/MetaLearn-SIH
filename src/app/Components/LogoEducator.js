@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import logoSrc from '../Media/logo.png'; // Adjust path if logo is different
 
@@ -14,8 +15,11 @@ export default function Logo() {
             <div className='h-16'>
 
             </div>
-            <div className='text-5xl font-michrome'>
+            <Link href='../' className='text-5xl font-michrome'>
                 MetaLearn
+                </Link>
+            <div  className='text-sm font-inter flex flex-col justify-between items-center'>
+                For Educators
             </div>
         </div>
     );

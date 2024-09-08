@@ -1,10 +1,10 @@
 "use client";
+import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import Logo from '../../Components/Logo';
+import Logo from '../../Components/LogoInstitute';
 import eye from './../../Media/Eye.png';
 import eye2 from './../../Media/Eye-closed.png';
-// import Login from './Login';
 
 
 
@@ -154,7 +154,7 @@ export default function Signup() {
                     <div className='h-5'></div>
                     <div className='Signup-page-referred flex flex-col text-data justify-center items-center'>
                         <div>Already have an account?</div>
-                        <a href='#Login' className='text-[#0F71E4]'>Login</a>
+                        <a href='../LogIn/Institute' className='text-[#0F71E4]'>Login</a>
                     </div>
                 </form>
             </div>
