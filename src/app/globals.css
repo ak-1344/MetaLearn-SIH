@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+
+body{
+  font-family: 'Inter', sans-serif; /* Set the default font */
+}
+
+.font-michrome{
+  font-family: 'Michroma',sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
